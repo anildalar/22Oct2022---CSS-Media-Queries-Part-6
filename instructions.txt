@@ -1,0 +1,8 @@
+RWD = Responsive Web Design
+
+Media Queries
+
+
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+https://www.w3schools.com/css/tryresponsive_col-s.htm

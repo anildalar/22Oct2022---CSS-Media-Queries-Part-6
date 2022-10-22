@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Media Queries Part 6</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <style>
+            @font-face {
+                font-family:'xyz';
+                src:url("./fonts/Roboto-Black.ttf") format("truetype") ;
+
+            }
+
+            body{
+                margin:0px;
+                font-family:'xyz',sans-serif;
+            }
+            header{
+                width: 100%;
+                height: 200px;
+                background: purple;
+                color:#fff;
+            }
+            header > h1{
+                margin-top:0px;
+            }
+           
+            main > aside:first-child{
+                float: left;
+                width: 25%;
+                height: 1000px;
+                padding:30px 0px;
+                border:1px dashed #000;
+            }
+            main > section{
+                float: left;
+                width: 45%;
+                height: 1000px;
+                padding:30px;
+                border:1px dashed #000;
+            }
+            main > aside:last-child{
+                float: left;
+                width: 24%;
+                height: 1000px;
+                padding:30px 0px;
+                border:1px dashed #000;
+            }
+            ul.left{
+                list-style: none;
+                padding: 0px;
+               
+            }
+            ul.left > li > a{
+                text-decoration:none;
+                background:skyblue;
+                color:#fff;
+                padding: 8px 5px;
+                width:95% !important;
+                display: block;
+               
+                
+            }
+            ul.left > li{
+                margin-bottom: 25px;
+               
+
+            }
+            footer{
+                clear: both;
+                width: 100%;
+                height: 150px;
+                background:skyblue;
+            }
+
+            /*
+            @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+                CSS-Code;
+            }
+            */
+            /* Small Device sm */
+
+            @media only screen and (min-width:0px) and (max-width:599px){
+                main > aside:first-child{
+                    width:100%;
+                    height: 200px;
+                }
+                main > section{
+                    width:100%;
+                    height: 200px;
+                }
+                main > aside:last-child{
+                    width:100%;
+                    height: 400px;
+                }
+            }
+            /* medium Device md */
+
+            @media only screen and (min-width:600px) and (max-width:767px){
+                main > aside:first-child{
+                    height:300px;
+                }
+                main > section{
+                    width:65%;
+                    height:300px;
+                }
+                main > aside:last-child{
+                    width:100%;
+                }
+            }
+
+            /* large Device lg */
+
+            @media only screen and (min-width:768px) and (max-width:844px){
+                main > aside:first-child{
+                    width:25%;
+                }
+                main > section{
+                    width:50%;
+                }
+                main > aside:last-child{
+                    width:15%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>India</h1>
+        </header>
+        <main>
+            <aside>
+                <ul class="left">
+                    <li>
+                        <a href="#">The Flight</a>
+                    </li>
+                    <li>
+                        <a href="#">The Flight</a>
+                    </li>
+                    <li>
+                        <a href="#">The Flight</a>
+                    </li>
+                    <li>
+                        <a href="#">The Flight</a>
+                    </li>
+                    <li>
+                        <a href="#">The Flight</a>
+                    </li>
+                </ul>
+            </aside>
+            <section>
+                <h3>The City</h3>
+                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            </section>
+            <aside>C</aside>
+        </main>
+        <footer></footer>
+    </body>
+</html>
